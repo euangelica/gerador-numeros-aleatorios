@@ -291,3 +291,13 @@ input[type="number"] {
     align-items: center;
     gap: 5px;
 }
+
+.link-rodape {
+    color: #FF1493; /* Usa o rosa da sua identidade visual */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-rodape:hover {
+    text-decoration: underline; /* Sublinha quando passa o mouse */
+}
