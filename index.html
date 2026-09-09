@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Números Aleatórios</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho-site">
+    <!-- Lado Esquerdo: Logo -->
+    <a href="#" class="logo">sorteio.com</a>
+
+    <!-- Lado Direito: Menus e Botões -->
+    <div class="menu-direito">
+        
+        <!-- Links de navegação -->
+        <nav class="links-menu">
+            <a href="#">Início</a>
+            <a href="#">Preços</a>
+            <a href="#">Como funciona</a>
+            <a href="#">Nossos Sorteios <span class="seta">▼</span></a>
+            <a href="#">Login</a>
+        </nav>
+
+        <!-- Botões de ação (Idioma e Tema) -->
+        <div class="botoes-acao">
+            <button class="btn-cabecalho">
+                <span>🇧🇷 PT</span>
+                <span class="seta">▼</span>
+            </button>
+            <button class="btn-cabecalho btn-lua">
+                🌙
+            </button>
+        </div>
+        
+    </div>
+</header>
+    
+    <main>
+    <h1>Gerador de Números</h1>
+    
+    <!-- NOVO: Campo para o usuário escolher a quantidade -->
+    <div class="painel-sorteio">
+    <span>Sortear</span>
+    
+    <!-- Quadrados de Quantidade (- 1 +) -->
+    <button id="btn-menos" class="quadrado-btn">-</button>
+    <input type="number" id="quantidade" class="quadrado-input texto-laranja" value="1" min="1">
+    <button id="btn-mais" class="quadrado-btn">+</button>
+    
+    <span>número entre</span>
+    
+    <!-- Quadrados de De / Até -->
+    <input type="number" id="minimo" class="quadrado-input" value="1">
+    <span>e</span>
+    <input type="number" id="maximo" class="quadrado-input texto-laranja" value="100">
+</div>
+
+    <!-- Local onde os números gerados vão aparecer -->
+    <p id="resultado">0</p>
+    
+    <!-- Botão que vai disparar a ação -->
+    <button id="botao-gerar">Gerar</button>
+</main>
+
+    <!-- Link para o arquivo JavaScript (sempre no final do body) -->
+    <script src="script.js"></script>
+</body>
+</html>
