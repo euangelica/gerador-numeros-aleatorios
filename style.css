@@ -211,7 +211,7 @@ input[type="number"] {
 }
 
 .modal-header {
-    background-color: #d1107a; /* Laranja da foto */
+    background-color: #d1107a; /* Rosa da foto */
     color: #ffffff;
     padding: 30px;
     position: relative;
@@ -261,7 +261,7 @@ input[type="number"] {
 }
 
 .item-historico {
-    background-color: #fff0e6; /* Fundo laranja bem claro */
+    background-color: #fff0e6; /* Fundo rosa bem claro */
     border-radius: 12px;
     padding: 20px;
     display: flex;
@@ -301,3 +301,4 @@ input[type="number"] {
 .link-rodape:hover {
     text-decoration: underline; /* Sublinha quando passa o mouse */
 }
+
