@@ -292,6 +292,9 @@ input[type="number"] {
     gap: 5px;
 }
 
+/* ========================================= */
+/* RODAPÉ DO SITE                            */
+/* ========================================= */
 .link-rodape {
     color: #FF1493; /* Usa o rosa da sua identidade visual */
     text-decoration: none;
