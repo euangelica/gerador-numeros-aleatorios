@@ -10,59 +10,55 @@ body {
 
 .cabecalho-site {
     display: flex;
-    justify-content: space-between; /* Joga a logo pra esquerda e o menu pra direita */
-    align-items: center; /* Centraliza tudo verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
     background-color: #ffffff;
-    padding: 15px 40px; /* Espaço em cima/baixo e nas laterais */
-    border-bottom: 1px solid #eaeaea; /* Linha cinza sutil na parte de baixo */
+    padding: 15px 40px; 
+    border-bottom: 1px solid #eaeaea; 
+    border-radius: 10px; 
 }
 
-/* Estilo da Logo */
 .logo {
-    color: #ff5a00; /* Laranja da foto */
+    color: #FF1493; 
     font-size: 26px;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Agrupa os links e os botões */
 .menu-direito {
     display: flex;
     align-items: center;
-    gap: 30px; /* Distância entre os textos e os botões */
+    gap: 30px; 
 }
 
-/* Estilo dos textos de navegação */
 .links-menu {
     display: flex;
-    gap: 20px; /* Distância entre cada palavra */
+    gap: 20px; 
 }
 
 .links-menu a {
     text-decoration: none;
-    color: #4a5568; /* Cor cinza escuro */
+    color: #4a5568; 
     font-size: 15px;
     font-weight: bold;
 }
 
 .links-menu a:hover {
-    color: #ff5a00; /* Fica laranja ao passar o mouse */
+    color: #FF1493; 
 }
 
-/* Agrupa os botões quadrados */
 .botoes-acao {
     display: flex;
     gap: 10px;
 }
 
-/* Estilo dos botões (Idioma e Lua) */
 .btn-cabecalho {
     display: flex;
     align-items: center;
     gap: 8px;
     background-color: transparent;
-    border: 1px solid #e2e8f0; /* Borda cinza clarinha */
-    border-radius: 8px; /* Cantos arredondados */
+    border: 1px solid #e2e8f0; 
+    border-radius: 8px; 
     padding: 8px 12px;
     color: #4a5568;
     font-size: 14px;
@@ -71,49 +67,78 @@ body {
 }
 
 .btn-cabecalho:hover {
-    background-color: #f7fafc; /* Fica levemente cinza ao passar o mouse */
+    background-color: #f7fafc; 
 }
 
 .btn-lua {
     font-size: 18px;
-    padding: 8px; /* Deixa o botão da lua mais quadrado */
+    padding: 8px; 
 }
 
 .seta {
-    font-size: 10px; /* Deixa a setinha menor que o texto */
+    font-size: 10px; 
 }
 
-h1 {
-    color: #ffffff; /* Deixa a cor do texto branca para dar contraste */
-    font-size: 36px; /* Aumenta o tamanho da letra */
-    margin-bottom: 30px; /* Cria um espaço entre o título e o painel branco */
+/* ========================================= */
+/* ESTRUTURA PRINCIPAL (CARTÃO BRANCO)       */
+/* ========================================= */
+
+main {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 80vh; 
+    padding: 20px; /* Garante um respiro nas laterais em telas menores */
 }
 
-/* Esconde as setinhas padrão que o navegador coloca nos inputs de número */
+.cartao-principal {
+    background-color: #ffffff; 
+    border-radius: 20px; 
+    padding: 40px; 
+    width: 100%;
+    max-width: 750px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); 
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.cartao-principal h1 {
+    color: #1a202c;
+    font-size: 32px;
+    margin: 0;
+    text-align: center; 
+}
+
+/* ========================================= */
+/* PAINEL DE SORTEIO E INPUTS                */
+/* ========================================= */
+
+.painel-sorteio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 12px;
+    color: #4a5568;
+    max-width: 600px; 
+    width: 100%; 
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input[type="number"] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
-/* Alinha todos os itens lado a lado */
-.painel-sorteio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Espaço entre os elementos */
-    background-color: #f9f9f9; /* Fundo cinza clarinho da foto */
-    padding: 20px;
-    border-radius: 12px;
-    font-family: Arial, sans-serif;
-    color: #4a5568;
-    margin-bottom: 20px;
-}
-
-/* Estilo dos botões de - e + */
 .quadrado-btn {
     width: 40px;
     height: 40px;
@@ -129,7 +154,6 @@ input[type="number"] {
     background-color: #e2e8f0;
 }
 
-/* Estilo das caixas onde vão os números */
 .quadrado-input {
     width: 60px;
     height: 40px;
@@ -141,7 +165,129 @@ input[type="number"] {
     outline: none;
 }
 
-/* A cor laranja da foto para dar destaque */
-.texto-laranja {
+.texto-rosa {
     color: #FF1493;
+}
+
+/* ========================================= */
+/* BOTÃO PRINCIPAL DE GERAR                  */
+/* ========================================= */
+
+.btn-principal {
+    background-color: #FF1493;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+.btn-principal:hover {
+    background-color: #d1107a; 
+}
+
+/* ========================================= */
+/* MODAL (JANELA FLUTUANTE)                  */
+/* ========================================= */
+.modal-overlay {
+    display: none; /* Escondido por padrão. O JS vai mudar para 'flex' */
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escurecido */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Garante que fique por cima de tudo */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 400px;
+    text-align: center;
+    overflow: hidden; /* Corta as quinas do cabeçalho colorido */
+}
+
+.modal-header {
+    background-color: #d1107a; /* Laranja da foto */
+    color: #ffffff;
+    padding: 30px;
+    position: relative;
+}
+
+.icone-hash {
+    font-size: 24px;
+    background-color: rgba(255,255,255, 0.2);
+    width: 50px; height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.fechar-btn {
+    position: absolute;
+    top: 15px; right: 20px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 40px;
+}
+
+.numero-destaque {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #d1107a;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 12px;
+}
+
+/* ========================================= */
+/* HISTÓRICO DE RESULTADOS                   */
+/* ========================================= */
+.historico-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.item-historico {
+    background-color: #fff0e6; /* Fundo laranja bem claro */
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.historico-numero {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d1107a;
+}
+
+.historico-texto {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+.item-historico {
+    background-color: #ffe6f2; /* Fundo rosa bem clarinho */
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
