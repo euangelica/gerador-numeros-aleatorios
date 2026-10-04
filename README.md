@@ -1,4 +1,4 @@
-✨ https://gerador-numeros-aleatorios-angelica-d060.vercel.app/inicio.html ❤️
+Demonstração: https://gerador-numeros-aleatorios-angelica-d060.vercel.app/inicio.html ✨
 
 # gerador-numeros-aleatorios
 Projeto de estudo: Aplicativo web para gerar números aleatórios." ou "Minha solução para o desafio do app gerador de números.
